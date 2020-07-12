@@ -80,7 +80,7 @@ export default {
       this.file = this.$refs.file.files[0];
       const formData = new FormData();
       formData.append('file' , this.file);
-      axios.post('http://localhost:3000/' , formData )
+      axios.post('https://whispering-eyrie-91831.herokuapp.com/' , formData )
               .then(response=>{
                 console.log(response.data);
                 this.response = response.data
